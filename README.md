@@ -1,4 +1,4 @@
-# Xray + Argo for Container PaaS
+
 
 为容器平台而生---平台部署方式为镜像或者 Dockerfile 方式的专用
 
@@ -18,7 +18,7 @@
 
 ## 项目特点:
 * 适用于通过 dockerhub 上已有的镜像或 Dockerfile 来建实例的平台
-* 在平台上部署 Xray，采用的方案为 Argo + Xray + WebSocket + TLS
+* 在平台上部署 Xray，采用的方案为 Argo + X+ WebSocket + TLS
 * 解锁 ChatGPT
 * 在浏览器查看系统各项信息，方便直观
 * 使用 CloudFlare 的 Argo 隧道，使用TLS加密通信，可以将应用程序流量安全地传输到Cloudflare网络，提高了应用程序的安全性和可靠性。此外，Argo Tunnel也可以防止IP泄露和DDoS攻击等网络威胁。
@@ -79,31 +79,3 @@
 <img width="1619" alt="image" src="https://user-images.githubusercontent.com/92626977/218253838-aa73b63d-1e8a-430e-b601-0b88730d03b0.png">
 
 <img width="1155" alt="image" src="https://user-images.githubusercontent.com/92626977/218253971-60f11bbf-9de9-4082-9e46-12cd2aad79a1.png">
-
-## 在 Koyeb 部署重点
-
-这里只作重点的展示，更详细可以参考项目: https://github.com/fscarmen2/V2-for-Koyeb
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&name=argox&ports=3000;http;/&env[UUID]=de04add9-5c68-8bab-950c-08cd5320df18&env[NEZHA_SERVER]=server%20domain%20or%20ip&env[NEZHA_PORT]=server%20port&env[NEZHA_KEY]=agent%20key&env[ARGO_AUTH]=argo%20token%20or%20json&env[ARGO_DOMAIN]=Argo%20domain&env[WEB_USERNAME]=Web%20username&env[WEB_PASSWORD]=Web%20password&image=docker.io/fscarmen/argo-x)
-
-<img width="680" alt="image" src="https://user-images.githubusercontent.com/92626977/218254134-20258fd8-f925-4f17-97f6-9a46cc28b364.png">
-
-<img width="909" alt="image" src="https://user-images.githubusercontent.com/92626977/214797317-bc60c51b-9518-4db1-9878-f6c8eb52a9b3.png">
-
-<img width="1340" alt="image" src="https://user-images.githubusercontent.com/92626977/215122040-7f3ba11b-4875-412c-a9c9-fefa05e336c5.png">
-
-## 在 Doprax 部署重点
-
-这里只作重点的展示，更详细可以参考项目: https://github.com/fscarmen2/V2-for-Doprax
-  
-<img width="1663" alt="image" src="https://user-images.githubusercontent.com/92626977/214801019-a1e9cf5d-67f0-49c5-956b-927f50bbb207.png">
-
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/92626977/214807633-18b1a1fe-a3b7-4f9b-99bd-0ef56e3a259c.png">
-
-## 鸣谢下列作者的文章和项目:
-* 前端 JS 在大佬 Nike Jeff 的项目 基础上，为了通用性和扩展功能作修改，https://github.com/hrzyang/glitch-trojan
-* 后端全部原创，如转载须注明来源。
-
-## 免责声明:
-* 本程序仅供学习了解, 非盈利目的，请于下载后 24 小时内删除, 不得用作任何商业用途, 文字、数据及图片均有所属版权, 如转载须注明来源。
-* 使用本程序必循遵守部署免责声明。使用本程序必循遵守部署服务器所在地、所在国家和用户所在国家的法律法规, 程序作者不对使用者任何不当行为负责。
